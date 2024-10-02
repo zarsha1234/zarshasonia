@@ -1,0 +1,7 @@
+
+  <.form :let={f} for={%{}} phx-change="validate_product" phx-submit="save_todo">
+   <.input type="text" field={f[:title]} label="title" />
+   <.input type="text" field={f[:description]} label="description" />
+   <.input type="checkbox" field={f[:status]} label="status" />
+   <.button>save</.button>
+  </.form> 

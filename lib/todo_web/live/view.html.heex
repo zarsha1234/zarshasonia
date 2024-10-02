@@ -1,0 +1,8 @@
+<.table
+  id="todo"
+  rows={@streams.todo}
+  row_click={fn {_id, todo} -> JS.navigate(~p"/form/#{todo}") end}
+>
+  <:col :let={{_id, todo}} label="Name"><%= todo.name %></:col>
+  <:col :let={{_id, todo}} label="Description"><%= todo.description %></:col>
+</.table>
